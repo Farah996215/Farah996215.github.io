@@ -42,7 +42,7 @@
                     </p>
                     <div class="d-flex gap-3 justify-content-center flex-wrap">
                         <a href="#projects" class="btn btn-primary btn-lg px-5">View My Projects</a>
-                        <a href="assets/mon-cv.pdf" class="btn btn-outline-light btn-lg px-5" download>Download CV</a>
+                        <a href="PortfolioFM.pdf" class="btn btn-outline-light btn-lg px-5" download>Download CV</a>
                     </div>
                 </div>
             </div>
@@ -354,52 +354,89 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5" style="background: #0f0f0f;">
-        <div class="container">
-            <div class="text-center mb-5">
-                <div class="section-label text-primary fw-bold mb-3">LET'S CONNECT</div>
-                <h2 class="display-4 fw-bold text-white mb-3">Contact</h2>
-                <p class="lead text-secondary">Feel free to contact me to discuss opportunities or collaborations</p>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                    <div class="card bg-dark border-secondary text-center h-100">
-                        <div class="card-body p-4">
-                            <div class="contact-icon-circle mb-3">📧</div>
-                            <h3 class="h5 text-white mb-2">Email</h3>
-                            <a href="mailto:farahmzoughi11@gmail.com" class="text-secondary text-decoration-none">farahmzoughi11@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-dark border-secondary text-center h-100">
-                        <div class="card-body p-4">
-                            <div class="contact-icon-circle mb-3">📱</div>
-                            <h3 class="h5 text-white mb-2">Phone</h3>
-                            <a href="tel:+216********" class="text-secondary text-decoration-none">+216 21 231 765</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-dark border-secondary text-center h-100">
-                        <div class="card-body p-4">
-                            <div class="contact-icon-circle mb-3">📍</div>
-                            <h3 class="h5 text-white mb-2">Location</h3>
-                            <p class="text-secondary mb-0">Ben arous - Mornag</p>
-                        </div>
+  <!-- Contact Section -->
+<section id="contact" class="py-5" style="background: #0f0f0f;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="section-label text-primary fw-bold mb-3">LET'S CONNECT</div>
+            <h2 class="display-4 fw-bold text-white mb-3">Contact</h2>
+            <p class="lead text-secondary">Feel free to contact me to discuss opportunities or collaborations</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card bg-dark border-secondary text-center h-100">
+                    <div class="card-body p-4">
+                        <div class="contact-icon-circle mb-3">📧</div>
+                        <h3 class="h5 text-white mb-2">Email</h3>
+                        <a href="mailto:farahmzoughi11@gmail.com" class="text-secondary text-decoration-none">farahmzoughi11@gmail.com</a>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5">
-                <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <a href="assets/mon-cv.pdf" class="btn btn-primary btn-lg px-5" download>Download My CV</a>
-                    <a href="mailto:farahmzoughi11@gmail.com" class="btn btn-outline-light btn-lg px-5">Send Me an Email</a>
+            <div class="col-md-4">
+                <div class="card bg-dark border-secondary text-center h-100">
+                    <div class="card-body p-4">
+                        <div class="contact-icon-circle mb-3">📱</div>
+                        <h3 class="h5 text-white mb-2">Phone</h3>
+                        <a href="tel:+216********" class="text-secondary text-decoration-none">+216 ** *** ***</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark border-secondary text-center h-100">
+                    <div class="card-body p-4">
+                        <div class="contact-icon-circle mb-3">📍</div>
+                        <h3 class="h5 text-white mb-2">Location</h3>
+                        <p class="text-secondary mb-0">Tunisia</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- CV Buttons with NEW functionality -->
+        <div class="text-center mt-5">
+            <h3 class="h4 text-white mb-4">📄 My Resume</h3>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <!-- Button to VIEW CV in Modal -->
+                <button type="button" class="btn btn-primary btn-lg px-5" data-bs-toggle="modal" data-bs-target="#cvModal">
+                    👁️ View CV
+                </button>
+                <!-- Button to DOWNLOAD CV -->
+                <a href="PortfolioFM.pdf" class="btn btn-success btn-lg px-5" download>
+                    📥 Download CV
+                </a>
+                <a href="mailto:farahmzoughi11@gmail.com" class="btn btn-outline-light btn-lg px-5">
+                    📧 Send Email
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- CV Modal (Pop-up Window) -->
+<div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title text-white" id="cvModalLabel">📄 My Resume - Farah Mzoughi</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0" style="height: 80vh;">
+                <!-- PDF Viewer -->
+                <iframe 
+                    src="PortfolioFM.pdf" 
+                    style="width: 100%; height: 100%; border: none;"
+                    title="CV Preview">
+                </iframe>
+            </div>
+            <div class="modal-footer border-secondary">
+                <a href="PortfolioFM.pdf" class="btn btn-success" download>
+                    📥 Download CV
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Footer -->
     <footer class="py-5 text-center border-top border-secondary">
         <div class="container">
