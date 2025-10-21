@@ -240,3 +240,74 @@ section {
 html {
     scroll-behavior: smooth;
 }
+/* Modal Customization */
+.modal-content {
+    background-color: #111111 !important;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #1a1a1a !important;
+}
+
+.btn-close-white {
+    filter: brightness(0) invert(1);
+}
+
+.btn-success {
+    background-color: #10b981;
+    border-color: #10b981;
+}
+
+.btn-success:hover {
+    background-color: #059669;
+    border-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+/* CV Section Enhancement */
+#contact h3 {
+    position: relative;
+    display: inline-block;
+}
+
+#contact h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6 0%, #10b981 100%);
+    border-radius: 2px;
+}
+
+/* Button Hover Effects */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+/* Mobile optimization for CV Modal */
+@media (max-width: 768px) {
+    .modal-xl {
+        max-width: 95%;
+        margin: 1rem auto;
+    }
+    
+    .modal-body {
+        height: 70vh !important;
+    }
+    
+    #contact .d-flex {
+        flex-direction: column;
+    }
+    
+    #contact .btn {
+        width: 100%;
+    }
+}
