@@ -311,3 +311,238 @@ html {
         width: 100%;
     }
 }
+  
+        /* Navigation Styles */
+        .custom-nav {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff !important;
+            text-decoration: none;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            color: #6366f1 !important;
+        }
+
+        /* Picture Hover Effect */
+        .logo-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-picture-popup {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 2px 20px rgba(99, 102, 241, 0.4);
+            border: 3px solid #6366f1;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .logo-container:hover .profile-picture-popup {
+            visibility: visible;
+        }
+
+        .profile-picture-popup img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+        }
+
+        .nav-link:hover {
+            color: #6366f1 !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-image-container {
+            position: relative;
+            width: 80%;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .hero-profile-image {
+            width: 80%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.4);
+            object-fit: cover;
+        }
+
+
+
+        .subtitle {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-outline-light {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-label {
+            font-size: 0.875rem;
+            letter-spacing: 2px;
+        }
+
+        .text-primary {
+            color: #6366f1 !important;
+        }
+
+        .text-secondary {
+            color: rgba(255, 255, 255, 0.6) !important;
+        }
+
+        .bg-dark {
+            background: #1a1a1a !important;
+        }
+
+        .border-secondary {
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);
+        }
+
+        .skill-icon-box {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .bg-gradient {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+
+        .badge {
+            font-weight: 500;
+            border-radius: 6px;
+        }
+
+        .project-img-placeholder {
+            height: 200px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-icon-circle {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto;
+        }
+
+        .social-icon-link {
+            width: 50px;
+            height: 50px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 2px solid rgba(99, 102, 241, 0.3);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon-link:hover {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border-color: #6366f1;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding-top: 100px;
+            }
+
+            .display-1 {
+                font-size: 3rem;
+            }
+
+            .profile-picture-popup {
+                width: 150px;
+                height: 150px;
+            }
+
+            .hero-image-container {
+                margin-top: 3rem;
+            }
+        }
