@@ -104,6 +104,6 @@ Web Developer
 
 Email: farahmzoughi11@gmail.com
 
-GitHub: Farah996215
+GitHub: https://github.com/Farah996215
 
-GitLab: Farah996215
+GitLab: https://gitlab.com/Farah996215
